@@ -1,0 +1,90 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Icons\buffer.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\conveyor.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\flowchart.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\merge.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\split.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\conversion.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\reports.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\constraint.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\play.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\settings.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\experiments.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="Chart.fs" />
+    <Compile Include="TextEditor.fs" />
+    <Compile Include="GridSplitter.fs" />
+    <Compile Include="Types.fs" />
+    <Compile Include="Parser.fs" />
+    <Compile Include="Layout.fs" />
+    <Compile Include="Cmd.fs" />
+    <Compile Include="Msg.fs" />
+    <Compile Include="Save.fs" />
+    <Compile Include="Open.fs" />
+    <Compile Include="Validation.fs" />
+    <Compile Include="Runner.fs" />
+    <Compile Include="View\Icons.fs" />
+    <Compile Include="View\EditPanes\Buffers.fs" />
+    <Compile Include="View\EditPanes\Constraints.fs" />
+    <Compile Include="View\EditPanes\Splits.fs" />
+    <Compile Include="View\EditPanes\Merges.fs" />
+    <Compile Include="View\EditPanes\Conveyors.fs" />
+    <Compile Include="View\EditPanes\Conversions.fs" />
+    <Compile Include="View\EditPanes\Experiments.fs" />
+    <Compile Include="View\Flowchart.fs" />
+    <Compile Include="View\Navigation.fs" />
+    <Compile Include="View\Reporting\Reports\History.fs" />
+    <Compile Include="View\Reporting\Reports\Histories.fs" />
+    <Compile Include="View\Reporting\Reporting.fs" />
+    <Compile Include="View\Menu.fs" />
+    <Compile Include="View\Screen.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia.Desktop" Version="11.0.2" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.2" />
+    <PackageReference Include="Avalonia.FuncUI" Version="1.0.0" />
+    <PackageReference Include="Avalonia.FuncUI.Elmish" Version="1.0.0" />
+    <PackageReference Include="Avalonia.AvaloniaEdit" Version="11.0.1" />
+    <PackageReference Include="Avalonia.Svg.Skia" Version="11.0.0.3" />
+    <PackageReference Include="Dagre.NET" Version="1.0.0.6" />
+    <PackageReference Include="FSharp.SystemTextJson" Version="1.2.42" />
+    <PackageReference Include="FSharp.UMX" Version="1.1.0" />
+    <PackageReference Include="LiveChartsCore.SkiaSharpView.Avalonia" Version="2.0.0-beta.900" />
+    <PackageReference Include="MessagePack" Version="2.6.100-alpha" />
+    <PackageReference Include="MessagePack.FSharpExtensions" Version="4.0.0" />
+    <PackageReference Include="System.Reactive" Version="6.0.1-preview.1" />
+  </ItemGroup>
+
+
+</Project>
